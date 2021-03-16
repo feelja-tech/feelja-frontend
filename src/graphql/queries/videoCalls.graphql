@@ -1,0 +1,18 @@
+query videoCalls {
+  currentUser {
+    id
+    profile {
+      propicFileDownloadUrl
+    }
+    videoCalls {
+      id
+      happensAt
+      availabilities
+      accessToken
+      initiator
+      profiles {
+        ...CompleteProfile
+      }
+    }
+  }
+}

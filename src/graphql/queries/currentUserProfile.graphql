@@ -1,0 +1,8 @@
+query currentUserProfile {
+  currentUser {
+    id
+    profile {
+      ...CompleteProfile
+    }
+  }
+}

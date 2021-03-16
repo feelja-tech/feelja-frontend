@@ -1,0 +1,17 @@
+query currentUser {
+  currentUser {
+    id
+    state
+    profile {
+      propicFileDownloadUrl
+    }
+    videoCalls {
+      initiator
+      happensAt
+      availabilities
+    }
+    meetings {
+      happensAt
+    }
+  }
+}

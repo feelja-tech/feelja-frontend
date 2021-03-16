@@ -1,0 +1,13 @@
+query matches {
+  currentUser {
+    id
+    matches {
+      id
+      unlockedAt
+      availabilities
+      profiles {
+        ...CompleteProfile
+      }
+    }
+  }
+}

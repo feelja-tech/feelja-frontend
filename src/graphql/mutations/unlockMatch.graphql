@@ -1,0 +1,6 @@
+mutation unlockMatch($matchId: ID!) {
+  unlockMatch(matchId: $matchId) {
+    id
+    unlockedAt
+  }
+}

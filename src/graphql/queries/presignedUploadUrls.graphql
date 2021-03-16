@@ -1,0 +1,8 @@
+query presignedUploadUrls {
+  currentUser {
+    id
+    faceFileUploadUrl
+    idFileUploadUrl
+    propicFileUploadUrl
+  }
+}

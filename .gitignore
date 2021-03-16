@@ -1,0 +1,17 @@
+node_modules
+.next
+*.log
+.env
+out
+android
+ios
+__screenshots__
+public/test_assets/*
+!public/test_assets/.keep
+# ios/*
+# !ios/App
+# ios/App/*
+# !ios/App/App
+# ios/App/App/*
+# !ios/App/App/Info.plist
+# !ios/App/Podfile

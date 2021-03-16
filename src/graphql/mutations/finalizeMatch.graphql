@@ -1,0 +1,13 @@
+mutation finalizeMatch(
+  $matchId: ID!
+  $chosenUserId: ID
+  $availabilities: [DateTime]!
+) {
+  finalizeMatch(
+    chosenUserId: $chosenUserId
+    matchId: $matchId
+    availabilities: $availabilities
+  ) {
+    id
+  }
+}

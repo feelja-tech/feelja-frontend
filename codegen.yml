@@ -1,0 +1,15 @@
+overwrite: true
+schema:
+  - "http://localhost:4000/api/graphql":
+      headers:
+        Cookie: feelja_user=SFMyNTY.g3QAAAABbQAAAAtzb3BoaWFfdXNlcmEE.6r2ZPow5d1HEDBLhgAEjf4Jvpaojgn14RekfFXjs-BU
+documents: "src/**/*.graphql"
+generates:
+  src/graphql/generated.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"

@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.feelja.app.twa",
+      "sha256_cert_fingerprints": [
+        "EE:BA:32:93:52:A3:80:AA:88:11:36:01:C5:3E:A1:E2:38:CF:FD:9F:2A:F2:BD:F5:9D:DA:16:F6:B6:F9:73:5A"
+      ]
+    }
+  }
+]

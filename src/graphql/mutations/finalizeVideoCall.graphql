@@ -1,0 +1,13 @@
+mutation finalizeVideoCall(
+  $videoCallId: ID!
+  $chosenUserId: ID
+  $availabilities: [DateTime]!
+) {
+  finalizeVideoCall(
+    chosenUserId: $chosenUserId
+    videoCallId: $videoCallId
+    availabilities: $availabilities
+  ) {
+    id
+  }
+}

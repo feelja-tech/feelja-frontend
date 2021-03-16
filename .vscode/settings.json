@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.lintTask.options": "--fix .",
+  "search.exclude": {
+    "**/.next/**": true,
+    "**/public": true
+  },
+  "files.watcherExclude": {
+    "**/__screenshots__/**": true,
+    "**/.next/**": true,
+    "**/out/**": true,
+    "**/public/**": true
+  }
+}

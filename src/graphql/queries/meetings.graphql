@@ -1,0 +1,13 @@
+query meetings {
+  currentUser {
+    id
+    meetings {
+      id
+      happensAt
+      location
+      profiles {
+        ...CompleteProfile
+      }
+    }
+  }
+}

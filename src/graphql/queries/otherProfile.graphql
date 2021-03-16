@@ -1,0 +1,23 @@
+query otherProfile {
+  currentUser {
+    id
+    matches {
+      id
+      profiles {
+        ...CompleteProfile
+      }
+    }
+    videoCalls {
+      id
+      profiles {
+        ...CompleteProfile
+      }
+    }
+    meetings {
+      id
+      profiles {
+        ...CompleteProfile
+      }
+    }
+  }
+}

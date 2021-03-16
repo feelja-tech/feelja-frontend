@@ -1,0 +1,25 @@
+mutation updateProfile(
+  $height: Int!
+  $name: String!
+  $politicPreferences: [String]!
+  $religiousPreferences: [String]!
+  $age: Int!
+  $location: Json
+) {
+  updateCurrentProfile(
+    height: $height
+    politicPreferences: $politicPreferences
+    religiousPreferences: $religiousPreferences
+    name: $name
+    age: $age
+    location: $location
+  ) {
+    id
+    height
+    politicPreferences
+    religiousPreferences
+    name
+    age
+    location
+  }
+}

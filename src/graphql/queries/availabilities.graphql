@@ -1,0 +1,17 @@
+query availabilities {
+  currentUser {
+    id
+    state
+    matches {
+      id
+      availabilities
+    }
+    videoCalls {
+      id
+      availabilities
+      profiles {
+        id
+      }
+    }
+  }
+}
